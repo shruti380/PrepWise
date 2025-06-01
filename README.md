@@ -1,64 +1,71 @@
-⚙️ Tech Stack
-Next.js
 
-Firebase
 
-Tailwind CSS
 
-Vapi AI
+## ⚙️ Tech Stack
 
-shadcn/ui
+* **Next.js**
+* **Firebase**
+* **Tailwind CSS**
+* **Vapi AI**
+* **shadcn/ui**
+* **Google Gemini**
+* **Zod**
 
-Google Gemini
+## 🔋 Key Features
 
-Zod
-
-🔋 Key Features
-👉 User Authentication
+👉 **User Authentication**
 Secure email/password sign-up and sign-in using Firebase Authentication.
 
-👉 Create AI-Powered Interviews
+👉 **Create AI-Powered Interviews**
 Easily generate job interviews through a voice assistant powered by Vapi and Google Gemini.
 
-👉 Instant AI Feedback
+👉 **Instant AI Feedback**
 Participate in voice-based mock interviews and get real-time feedback based on your conversation.
 
-👉 Modern UI/UX
+👉 **Modern UI/UX**
 Intuitive and responsive interface with a focus on clean design and user experience.
 
-👉 Interview Interface
+👉 **Interview Interface**
 Conduct AI interviews with real-time feedback and detailed transcripts.
 
-👉 Dashboard
+👉 **Dashboard**
 View, manage, and track all your interview sessions through a centralized dashboard.
 
-👉 Responsive Design
+👉 **Responsive Design**
 Fully optimized for use across all screen sizes and devices.
 
-👉 Clean Code Architecture
+👉 **Clean Code Architecture**
 Emphasis on scalability, reusability, and well-structured code practices.
 
-🤸 Quick Start Guide
-Prerequisites
+---
+
+## 🤸 Quick Start Guide
+
+### Prerequisites
+
 Ensure the following are installed:
 
-Git
+* Git
+* Node.js
+* npm
 
-Node.js
+### Clone the Repository
 
-npm
-
-Clone the Repository
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/shruti380/PrepWise.git
-Install Dependencies
+```
+
+### Install Dependencies
+
+```bash
 npm install
-Configure Environment Variables
-Create a .env.local file in the root directory and add the following:
+```
 
+### Configure Environment Variables
 
+Create a `.env.local` file in the root directory and add the following:
+
+```
 NEXT_PUBLIC_VAPI_WEB_TOKEN=
 NEXT_PUBLIC_VAPI_WORKFLOW_ID=
 
@@ -76,19 +83,28 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 FIREBASE_PROJECT_ID=
 FIREBASE_CLIENT_EMAIL=
 FIREBASE_PRIVATE_KEY=
+```
+
 Replace the values with your actual credentials from Firebase and Vapi.
 
-Start the Development Server
+### Start the Development Server
+
+```bash
 npm run dev
-Visit http://localhost:3000 to view the project in action.
+```
 
-🕸️ Code Highlights
-globals.css
+Visit [http://localhost:3000](http://localhost:3000) to view the project in action.
 
-lib/utils.ts
+---
 
-Interview Question Generator: /app/api/vapi/generate/route.tsx
+## 🕸️ Code Highlights
 
-AI Feedback Logic: lib/actions/general.action.ts
+* `globals.css`
+* `lib/utils.ts`
+* Interview Question Generator: `/app/api/vapi/generate/route.tsx`
+* AI Feedback Logic: `lib/actions/general.action.ts`
+* Feedback Display: `app/(root)/interview/[id]/feedback/page.tsx`
 
-Feedback Display: app/(root)/interview/[id]/feedback/page.tsx
+
+---
+
