@@ -1,48 +1,63 @@
 ⚙️ Tech Stack
 Next.js
+
 Firebase
+
 Tailwind CSS
+
 Vapi AI
+
 shadcn/ui
-Google Gemeni
+
+Google Gemini
+
 Zod
-🔋 Features
-👉 Authentication: Sign Up and Sign In using password/email authentication handled by Firebase.
 
-👉 Create Interviews: Easily generate job interviews with help of Vapi voice assistants and Google Gemini.
+🔋 Key Features
+👉 User Authentication
+Secure email/password sign-up and sign-in using Firebase Authentication.
 
-👉 Get feedback from AI: Take the interview with AI voice agent, and receive instant feedback based on your conversation.
+👉 Create AI-Powered Interviews
+Easily generate job interviews through a voice assistant powered by Vapi and Google Gemini.
 
-👉 Modern UI/UX: A sleek and user-friendly interface designed for a great experience.
+👉 Instant AI Feedback
+Participate in voice-based mock interviews and get real-time feedback based on your conversation.
 
-👉 Interview Page: Conduct AI-driven interviews with real-time feedback and detailed transcripts.
+👉 Modern UI/UX
+Intuitive and responsive interface with a focus on clean design and user experience.
 
-👉 Dashboard: Manage and track all your interviews with easy navigation.
+👉 Interview Interface
+Conduct AI interviews with real-time feedback and detailed transcripts.
 
-👉 Responsiveness: Fully responsive design that works seamlessly across devices.
+👉 Dashboard
+View, manage, and track all your interview sessions through a centralized dashboard.
 
-and many more, including code architecture and reusability
-🤸 Quick Start
-Follow these steps to set up the project locally on your machine.
+👉 Responsive Design
+Fully optimized for use across all screen sizes and devices.
 
+👉 Clean Code Architecture
+Emphasis on scalability, reusability, and well-structured code practices.
+
+🤸 Quick Start Guide
 Prerequisites
-
-Make sure you have the following installed on your machine:
+Ensure the following are installed:
 
 Git
+
 Node.js
-npm (Node Package Manager)
-Cloning the Repository
 
+npm
+
+Clone the Repository
+bash
+Copy
+Edit
 git clone https://github.com/shruti380/PrepWise.git
-
-
-Install the project dependencies using npm:
-
+Install Dependencies
 npm install
-Set Up Environment Variables
+Configure Environment Variables
+Create a .env.local file in the root directory and add the following:
 
-Create a new file named .env.local in the root of your project and add the following content:
 
 NEXT_PUBLIC_VAPI_WEB_TOKEN=
 NEXT_PUBLIC_VAPI_WORKFLOW_ID=
@@ -61,17 +76,19 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 FIREBASE_PROJECT_ID=
 FIREBASE_CLIENT_EMAIL=
 FIREBASE_PRIVATE_KEY=
-Replace the placeholder values with your actual Firebase, Vapi credentials.
+Replace the values with your actual credentials from Firebase and Vapi.
 
-Running the Project
-
+Start the Development Server
 npm run dev
-Open http://localhost:3000 in your browser to view the project.
+Visit http://localhost:3000 to view the project in action.
 
-🕸️ Snippets
+🕸️ Code Highlights
 globals.css
+
 lib/utils.ts
-Generate questions prompt (/app/api/vapi/generate/route.tsx):
-Generate feedback prompt (lib/actions/general.action.ts):
-Display feedback (app/(root)/interview/[id]/feedback/page.tsx):
-Dummy Interviews:
+
+Interview Question Generator: /app/api/vapi/generate/route.tsx
+
+AI Feedback Logic: lib/actions/general.action.ts
+
+Feedback Display: app/(root)/interview/[id]/feedback/page.tsx
